@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+		
+		xhr.onreadystatechange = function() {
+			if(this.readyState === 4 && this.status === 200) {
+				var dog = JSON.parse(this.responseText);
+				console.log(dog);
+			}
+			
+		};
+		xhr.open("GET", "https://pokeapi.co/api/v2/pokemon/pikachu/");
+		
+		xhr.send();
+	
+	</script>
+</body>
+</html>
