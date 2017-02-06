@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+
+#guess {
+	visibility: hidden;
+}
+
+#continue {
+	visibility: hidden;
+}

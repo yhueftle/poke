@@ -5,9 +5,18 @@
 <title>SPA Poke</title>
 <!-- bootstrap.css -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+	#Jmove { position: relative; border; 1px solid green; background: white; float: left; width: 50px; height: 50px;}
+</style>
 </head>
 <body>
+	<div id="Jmove">
+		<img src="https://img.pokemondb.net/sprites/black-white/anim/shiny/jigglypuff.gif" id="Jiggles">
+	</div>
+
 	<h1 id="initWarningMessage">Jigglypuffs are coming...</h1>
+	<button type="button" onclick="increment()">Counter</button>
+	<p id ="incr"></p>
 
 	<div class="container">
 		<p>Pick your team</p>
